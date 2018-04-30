@@ -1,0 +1,40 @@
+#root{
+		display: flex;
+		justify-content: center;
+		
+
+	}
+		#main{
+			background-color: #fff;
+			padding:2rem;
+			width: 50%;
+			text-align: center;
+			border-radius: 1em;
+			
+		}
+		input[type="text"]
+		{
+			font-family: 'courier';
+			border-color:#fff;
+			border-radius: 0.1em;
+			padding: 1em;
+		}
+		input[type="password"]
+		{
+			font-family: 'courier';
+			border-color:#fff;
+			border-radius: 0.1em;
+			padding: 0.8em;
+		}
+		input[type="button"]
+		{
+			font-family: 'courier';
+			border-color:#fff;
+			border-radius: 0.1em;
+			padding: 0.8em;
+			background-color: #fff;
+		}
+		body{
+			font-family: 'courier';
+			background-image: url("bg1.jpg");
+		}

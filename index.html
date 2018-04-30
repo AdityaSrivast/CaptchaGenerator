@@ -5,70 +5,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
 	<style type="text/css">
-	#root{
-		display: flex;
-		justify-content: center;
-		
-
-	}
-		#main{
-			background-color: #fff;
-			padding:2rem;
-			width: 50%;
-			text-align: center;
-			border-radius: 1em;
-			
-		}
-		input[type="text"]
-		{
-			border-color: #fff;
-			border-radius: 0.5em;
-		}
-		body{
-			background-image: url("bg1.jpg");
-		}
+	
 	</style>
 
 </head>
 <body>
 	<div id="root">
 		<div id="main">
-		<h3>Captcha Generation</h3>
-		<input type="text" name="display" id="display" placeholder=""><br>
-		<img src="refresh2.png" id="btn" style="width: 50px;">
+			<h3>Form</h3>
+			<input type="text" name="username" id="username" placeholder="Enter Name"><br><br>
+			<input type="text" name="email" id="email" placeholder="Enter E-Mail"><br><br>
+			<input type="password" name="pwd" id="pwd" placeholder="Choose Password"><br><br>
+			<input type="text" id="captcha" placeholder="Enter Captcha">
+			<input type="text" name="display" id="display" placeholder="">
+			<img src="refresh2.png" id="btn" style="width: 50px;"><br><br>
+			<input type="button" id="btn2" value="Submit">
+		</div>
 	</div>
-
-	</div>
-	
-	<script type="text/javascript">
-		function gen_random_alpha(){
-			return Math.floor(Math.random() * 26);
-		}
-		function gen_random_num()
-		{
-			return Math.floor(Math.random() * 10);
-		}
-		var s=['','','','',''];
-		s[0]=String.fromCharCode(gen_random_alpha()+65);
-		s[1]=String.fromCharCode(gen_random_num()+48);
-		s[2]=String.fromCharCode(gen_random_alpha()+65);
-		s[3]=String.fromCharCode(gen_random_alpha()+65);
-		s[4]=String.fromCharCode(gen_random_num()+48);
-		l=s.join('');
-		
-		$("#display").val(l);
-		$("#btn").click(function(){
-			s[0]=String.fromCharCode(gen_random_alpha()+65);
-		s[1]=String.fromCharCode(gen_random_num()+48);
-		s[2]=String.fromCharCode(gen_random_alpha()+65);
-		s[3]=String.fromCharCode(gen_random_alpha()+65);
-		s[4]=String.fromCharCode(gen_random_num()+48);
-		l=s.join('');
-		
-		$("#display").val(l);
-		});
-	</script>
-
 </body>
 </html>
